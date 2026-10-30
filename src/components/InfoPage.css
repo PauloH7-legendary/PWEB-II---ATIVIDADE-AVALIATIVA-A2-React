@@ -1,0 +1,134 @@
+.info-page {
+  width: 100%;
+  min-height: 65vh;
+  padding: 56px 24px 48px;
+  background-color: #ffffff;
+  color: #39384d;
+}
+
+.info-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-eyebrow {
+  margin: 0 0 12px;
+  color: #bd35d5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.info-content h1 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 5vw, 38px);
+  font-weight: 700;
+}
+
+.info-intro {
+  max-width: 620px;
+  margin: 0 auto 36px;
+  color: #85818e;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.info-card {
+  padding: 0 0 22px;
+  background-color: #faf7fc;
+  border: 1px solid #eee4f4;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(57, 56, 77, 0.08);
+}
+
+.info-home-link {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #ffffff;
+  background-color: #bd35d5;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.info-card-image {
+  display: block;
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+}
+
+.info-card h2 {
+  margin: 18px 20px 12px;
+  color: #39384d;
+  font-size: 18px;
+}
+
+.info-card p {
+  margin: 0 20px;
+  color: #85818e;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.info-home-link:hover {
+  background-color: #9825ad;
+}
+
+@media (max-width: 650px) {
+  .info-page {
+    padding: 36px 20px;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .info-card {
+    text-align: center;
+  }
+
+  .info-intro {
+    font-size: 14px;
+  }
+
+  .offer-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 165px;
+  padding: 12px 20px 0;
+  background-color: #faf7fc;
+  overflow: hidden;
+}
+
+.offer-illustration svg {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: 100%;
+}
+
+}
